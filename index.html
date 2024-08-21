@@ -24,6 +24,8 @@
                         primary: 'rgb(171, 239, 95) ',
                         secondary: 'rgba(171, 239, 95, 0.5)',
                         text_primary: 'rgb(33, 33, 33)',
+                        btn_bg: 'rgba(171, 239, 95, 0.5)',
+                        btn_border: 'rgba(171, 239, 95, 0.5);'
                     },
                     fontFamily: {
                         Manrope: 'Manrope',
@@ -39,18 +41,20 @@
 </head>
 
 <body class="font-Manrope">
-    <header class="max-w-screen-2xl mx-auto">
+    <header class="max-w-screen-2xl md:mx-auto">
+        <!-- nav section start -->
         <nav class="navbar bg-base-100 flex items-center">
             <div class="navbar-start">
 
                 <div class="flex items-center gap-2">
-                    <div class="-rotate-45"><i class="fa-solid fa-arrow-right bg-primary p-2 rounded-[32px] "></i></div>
+                    <div class=""><i class="fa-solid fa-arrow-right bg-primary -rotate-45 p-2 rounded-[32px] "></i>
+                    </div>
                     <a href="">
                         <h2 class="text-2xl font-extrabold text-[#212121]">Rinterio</h2>
                     </a>
                 </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-center  hidden lg:flex">
                 <ul class="menu menu-horizontal font-medium px-1">
                     <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Home</a></li>
                     <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Services</a></li>
@@ -83,8 +87,27 @@
                     </ul>
                 </div>
             </div>
-            </>
+        </nav>
+        <!-- banner section -->
+        <section class="flex flex-col justify-center items-center text-center gap-6 mx-3 md:mx-auto">
+            <div class=""><img class="" src="./assets/banner.png" alt=""></div>
+            <h1 class="text-text_primary text-2xl md:text-6xl font-extrabold">A barn house of this design has a striking
+                appearance
+            </h1>
+            <p class="text-[#494949] font-medium">The barn house captivates with its blend of rustic charm and modern
+                sophistication, featuring weathered
+                wood, sleek <br>
+                metal accents, and large windows that flood the space with natural light.</p>
+            <button
+                class="bg-btn_bg px-6 py-1 md:py-3 rounded-full text-xl md:text-2xl font-extrabold w-full md:w-fit text-[#212121] border-btn_border border">
+                View Details
+                <i class="fa-solid fa-arrow-right bg-primary -rotate-45 p-2 rounded-full"></i>
+            </button>
+        </section>
     </header>
+    <main>
+
+    </main>
 </body>
 
 </html>
