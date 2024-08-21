@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- for favicon -->
-    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <!-- tailwind and daisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,8 +38,53 @@
     <title>Rinterio</title>
 </head>
 
-<body>
+<body class="font-Manrope">
+    <header class="max-w-screen-2xl mx-auto">
+        <nav class="navbar bg-base-100 flex items-center">
+            <div class="navbar-start">
 
+                <div class="flex items-center gap-2">
+                    <div class="-rotate-45"><i class="fa-solid fa-arrow-right bg-primary p-2 rounded-[32px] "></i></div>
+                    <a href="">
+                        <h2 class="text-2xl font-extrabold text-[#212121]">Rinterio</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal font-medium px-1">
+                    <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Home</a></li>
+                    <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Services</a></li>
+                    <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Portfolio</a></li>
+                    <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Blogs</a></li>
+                    <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end flex items-center gap-4">
+                <div class="md:flex items-center gap-4 hidden">
+                    <a href=""><i class="fa-solid fa-magnifying-glass p-4 rounded-full border"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping p-4 rounded-full border"></i></a>
+                    <button
+                        class="bg-[#ABEF5F] flex gap-2 items-center rounded-full text-[#1C1C1C] text-xl font-extrabold px-5 py-3">Book
+                        Consult
+                        <i class="fa-solid text-white fa-arrow-right bg-[#1C1C1C] p-2 rounded-full -rotate-45"></i>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class=" lg:hidden">
+                        <i class="fa-solid fa-bars p-3 md:p-4 rounded-full border"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] right-0 mt-3 w-52 p-2 shadow">
+                        <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Home</a></li>
+                        <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Services</a></li>
+                        <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Portfolio</a></li>
+                        <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Blogs</a></li>
+                        <li class="hover:font-bold hover:text-[#494949] duration-300 ease-in-out"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            </>
+    </header>
 </body>
 
 </html>
